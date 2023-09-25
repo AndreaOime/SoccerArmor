@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo2.css"> <!-- Enlaza tu archivo CSS personalizado -->
+    <title>Soccer Armor</title>
+</head>
+<body>
+   <!-- Tablero del marcador, según partidos -->
+    <section>
+        <div class="container mt-2">
+            <div class="row align-items-center ">
+                   <!-- PARTIDOS--> 
+                <div class="col md-auto">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Torneos
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Champions League</a></li>
+                        <li><a class="dropdown-item" href="#">Copa libertadores</a></li>
+                        <li><a class="dropdown-item" href="#">Liga Betplay</a></li>
+                    </ul>
+                </div>
+                <div class="col md-auto">
+                    <div>
+                        <a class="view-sponsor desktop" target="_blank" href="https://www.rushbet.co/?page=sports&btag=a_1597b_486c_&affid=529&siteid=1597&adid=486&c=ESPN_Logo#filter/all">
+                            Presentado por</a>
+                        <div>
+                            <img src="https://static.legalcdn.org/21/77/5d19e3794bec8_1561977721.png" width=140px height="50px"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col md-auto">
+                    <div class="equipo">
+                        <h2>Equipo A</h2>
+                        <div class="score">0</div>
+                    </div>
+                </div>
+                <div class="col md-auto">
+                    <div class="equipo">
+                        <h2>Equipo B</h2>
+                        <div class="score">0</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<header>     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="logo">
+            <img src="logo.jpeg" width="70px" alt="Logo" class="img-fluid">
+        </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Soccer Armor</a>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+         </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Cubles </a>
+                        <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="#"> Inglaterra </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Arsenal</a></li>
+                                <li><a class="dropdown-item" href="#">Chelsea</a></li>
+                                <li><a class="dropdown-item" href="#">Liverpool </a></li>
+                                <li><a class="dropdown-item" href="#">Manchester city </a></li>
+                                <li><a class="dropdown-item" href="#">Manchester United </a></li>
+                                <li><a class="dropdown-item" href="#">New Castle </a></li>
+                                <li><a class="dropdown-item" href="#">Tottenham </a></li>
+                            </ul>
+                        
+                        </li>
+                        <li> <a class="dropdown-item" href="#"> España</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Atlético de Madrid </a></li>
+                                <li><a class="dropdown-item" href="#">Barcelona</a></li>
+                                <li><a class="dropdown-item" href="#">Betis</a></li>                        
+                                <li><a class="dropdown-item" href="#">Real Madrid </a></li>
+                                <li><a class="dropdown-item" href="#">Sevilla </a></li>
+                                <li><a class="dropdown-item" href="#">Valencia </a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Italia </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Atalanta</a></li>
+                                <li><a class="dropdown-item" href="#">Inter de Milán </a></li>
+                                <li><a class="dropdown-item" href="#">Juventus </a></li>
+                                <li><a class="dropdown-item" href="#">LazioMilán </a></li>
+                                <li><a class="dropdown-item" href="#">Milán </a></li>
+                                <li><a class="dropdown-item" href="#">Roma </a></li>
+                            </ul>
+                            
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Alemania </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Borussia dortmund</a></li>
+                                <li><a class="dropdown-item" href="#">Bayern de Múnich</a></li>
+                                <li><a class="dropdown-item" href="#">Bayern Leverkusen </a>                 
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Francia </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lillie</a></li>
+                                <li><a class="dropdown-item" href="#">Mónaco</a></li>
+                                <li><a class="dropdown-item" href="#">Montpellier </a></li>
+                                <li><a class="dropdown-item" href="#">PSG </a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Colombia </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Atlético Nacional</a></li>
+                                <li><a class="dropdown-item" href="#">Millonarios </a></li>
+                                <li><a class="dropdown-item" href="#">América de Cali </a></li>
+                                <li><a class="dropdown-item" href="#">Junior de Barranquilla </a></li>
+                                <li><a class="dropdown-item" href="#">Independiente Santa Fe </a></li>
+                                <li><a class="dropdown-item" href="#">Deportivo Cali </a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Arabia Saudita </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Al-Hilal</a></li>
+                                <li><a class="dropdown-item" href="#">Al-Ittihad </a></li>
+                                <li><a class="dropdown-item" href="#">Al-Nassr </a></li>
+                                <li><a class="dropdown-item" href="#">Al-Ahli Saudi </a></li>                    
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Argentina </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Argentinos Juniors</a></li>
+                                <li><a class="dropdown-item" href="#">Boca Juniors </a></li>
+                                <li><a class="dropdown-item" href="#">Huracán </a></li>
+                                <li><a class="dropdown-item" href="#">Independiente </a></li>
+                                <li><a class="dropdown-item" href="#">Lanús </a></li>
+                                <li><a class="dropdown-item" href="#">Racing Club </a></li>
+                                <li><a class="dropdown-item" href="#">River Plate </a></li>
+                                <li><a class="dropdown-item" href="#">San Lorenzo de Almagro</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Estado Unidos </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Chicago Fire</a></li>
+                                <li><a class="dropdown-item" href="#">Colorado Rapids</a></li>
+                                <li><a class="dropdown-item" href="#">Columbus Crew </a></li>
+                                <li><a class="dropdown-item" href="#">D.C. United </a></li>
+                                <li><a class="dropdown-item" href="#">FC Dallas </a></li>
+                                <li><a class="dropdown-item" href="#">Inter de Miami</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Brasil </a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="#">América Mineiro</a></li>
+                                <li><a class="dropdown-item" href="#">Botafogo</a></li>
+                                <li><a class="dropdown-item" href="#">Corinthians </a></li>
+                                <li><a class="dropdown-item" href="#">Cruzeiro </a></li>
+                                <li><a class="dropdown-item" href="#">Flamengo </a></li>
+                                <li><a class="dropdown-item" href="#">Fluminense</a></li>
+                                <li><a class="dropdown-item" href="#">Internacional </a></li>  
+                                <li><a class="dropdown-item" href="#">Palmeiras </a></li>  
+                                <li><a class="dropdown-item" href="#">Santos </a></li>  
+                                <li><a class="dropdown-item" href="#">São Paulo </a></li> 
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Selecciones por federación </a>
+                        <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="#"> UEFA </a></li>
+                        <li> <a class="dropdown-item" href="#"> CONMEBOL</a>
+                            <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Argentina</a></li>
+                            <li><a class="dropdown-item" href="#">Brasil</a></li>
+                            <li><a class="dropdown-item" href="#">Colombia </a>                 
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> CONCACAF </a></li>
+                        <li><a class="dropdown-item" href="#"> CAF </a></li>
+                        <li><a class="dropdown-item" href="#"> AFC </a></li>
+                        </ul>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <img src="https://w7.pngwing.com/pngs/387/168/png-transparent-shopping-cart-button-graphy-earring-shopping-cart-angle-rectangle-logo.png" alt="carrito" width="80px" height="80px" class="img-fluid">
+                    <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
+                    
+                  
+
+                </ul>
+        </div>
+        <!-- navbar-collapse.// -->
+        </div>
+    <!-- container-fluid.// -->
+
+  </nav>
+        </div>
+        
+      </nav>
+</header>      
+    <!--carrusel-->
+     
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+            <img src="https://todosobrecamisetas.com/wp-content/uploads/newcastle-united-2022-23-castore-home-kit-h.jpg" class="d-block w-80" alt="..." >
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.bitbol.la/files/image/64/64677/6470a27da8072.jpg" class="d-block w-80" alt="..." >
+            </div>
+            <div class="carousel-item">
+            <img src="https://milanadictos.net/wp-content/uploads/2023/06/image-1.png" class="d-block w-80" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    <!--Fin carrusel-->
+    <section class="container mt-5">
+        <h1>Quiénes Somos</h1>
+        <p>Somos una tienda en línea apasionada por el fútbol, dedicada a ofrecerte una amplia selección de camisetas de los equipos de fútbol de todo el mundo. En nuestra tienda, encontrarás productos de alta calidad que te permitirán mostrar tu apoyo y amor por tu equipo favorito.</p>
+
+        <p>Nuestro objetivo es proporcionarte la mejor experiencia de compra en línea para los amantes del fútbol. Trabajamos arduamente para ofrecerte una amplia variedad de camisetas de diferentes equipos, tanto de ligas nacionales como internacionales.</p>
+
+        <p>En nuestra tienda, la pasión por el fútbol se refleja en la calidad de nuestros productos y en la atención al cliente que brindamos. Estamos comprometidos en asegurarnos de que encuentres la camiseta perfecta para representar a tu equipo favorito y celebrar tus victorias y momentos especiales.</p>
+
+        <p>Gracias por elegirnos como tu tienda de camisetas de fútbol. ¡Esperamos que disfrutes de tu experiencia de compra y encuentres la camiseta perfecta para mostrar tu pasión por el fútbol!</p>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2023 Tienda de Camisetas de Fútbol SOCCER ARMOR </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth < 992) {
+
+          // close all inner dropdowns when parent is closed
+          document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+            everydropdown.addEventListener('hidden.bs.dropdown', function () {
+              // after dropdown is hidden, then find all submenus
+              this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                // hide every submenu as well
+                everysubmenu.style.display = 'none';
+              });
+            })
+          });
+
+          document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+              let nextEl = this.nextElementSibling;
+              if (nextEl && nextEl.classList.contains('submenu')) {
+                // prevent opening link if link needs to open dropdown
+                e.preventDefault();
+                if (nextEl.style.display == 'block') {
+                  nextEl.style.display = 'none';
+                } else {
+                  nextEl.style.display = 'block';
+                }
+
+              }
+            });
+          })
+        }
+        // end if innerWidth
+      });
+    </script>
+
+
+</body>
+</html>
