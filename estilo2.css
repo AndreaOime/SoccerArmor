@@ -3,13 +3,14 @@
 
 body {
     padding-top: 20px;
+    background-color:antiquewhite;
 }
 
-.navbar {
-    border-bottom: 2px solid #f4efef;
-    
+.navbar-expand-lg{
+    margin:0 ;
+    padding: 0;
+    box-sizing: content-box;
 }
-
 
 .navbar-brand {
     font-size: 24px;
@@ -63,3 +64,31 @@ body {
 	}
 	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
 	.dropdown-menu > li:hover > .submenu{ display: block; }
+
+#navbar1{
+    background-color: #ed3e3e;
+}   
+#myDropdown{
+    text-align: center;
+}
+.btn-outline-success:hover{
+    background-color: dimgrey;
+}
+.btn-outline-success{
+    background-color: black;
+    color: white;
+    border-color: #f1f1f1;
+    margin: 0;
+}
+#carrusel{
+    background-color: #000000;
+}
+.colecciones{
+    color: #f1f1f1;
+    text-align: center;
+}
+#lista1 li{
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}

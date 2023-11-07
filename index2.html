@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo2.css"> <!-- Enlaza tu archivo CSS personalizado -->
     <title>Soccer Armor</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
    <!-- Tablero del marcador, según partidos -->
@@ -50,171 +52,168 @@
     </section>
 <header>     
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="logo">
-            <img src="logo.jpeg" width="70px" alt="Logo" class="img-fluid">
-        </div>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Soccer Armor</a>
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
-          </li>
-        
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid" id="navbar1">
+            
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo.jpeg" width="50" height="44" alt="Logo" class="d-inline-block align-text-top">
+                Soccer Armor
+            </a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-         </button>
-            <div class="collapse navbar-collapse" id="main_nav">
+            </button>
+                       
+            <div class="collapse navbar-collapse" id="main_nsav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>                        
                     <li class="nav-item dropdown" id="myDropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Cubles </a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Cubles </a>
                         <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="#"> Inglaterra </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Arsenal</a></li>
-                                <li><a class="dropdown-item" href="#">Chelsea</a></li>
-                                <li><a class="dropdown-item" href="#">Liverpool </a></li>
-                                <li><a class="dropdown-item" href="#">Manchester city </a></li>
-                                <li><a class="dropdown-item" href="#">Manchester United </a></li>
-                                <li><a class="dropdown-item" href="#">New Castle </a></li>
-                                <li><a class="dropdown-item" href="#">Tottenham </a></li>
-                            </ul>
-                        
-                        </li>
-                        <li> <a class="dropdown-item" href="#"> España</a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Atlético de Madrid </a></li>
-                                <li><a class="dropdown-item" href="#">Barcelona</a></li>
-                                <li><a class="dropdown-item" href="#">Betis</a></li>                        
-                                <li><a class="dropdown-item" href="#">Real Madrid </a></li>
-                                <li><a class="dropdown-item" href="#">Sevilla </a></li>
-                                <li><a class="dropdown-item" href="#">Valencia </a></li>
-                        </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Italia </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Atalanta</a></li>
-                                <li><a class="dropdown-item" href="#">Inter de Milán </a></li>
-                                <li><a class="dropdown-item" href="#">Juventus </a></li>
-                                <li><a class="dropdown-item" href="#">LazioMilán </a></li>
-                                <li><a class="dropdown-item" href="#">Milán </a></li>
-                                <li><a class="dropdown-item" href="#">Roma </a></li>
-                            </ul>
+                            <li> <a class="dropdown-item" href="#"> Inglaterra </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Arsenal</a></li>
+                                    <li><a class="dropdown-item" href="#">Chelsea</a></li>
+                                    <li><a class="dropdown-item" href="#">Liverpool </a></li>
+                                    <li><a class="dropdown-item" href="#">Manchester city </a></li>
+                                    <li><a class="dropdown-item" href="#">Manchester United </a></li>
+                                    <li><a class="dropdown-item" href="#">New Castle </a></li>
+                                    <li><a class="dropdown-item" href="#">Tottenham </a></li>
+                                </ul>
                             
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Alemania </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Borussia dortmund</a></li>
-                                <li><a class="dropdown-item" href="#">Bayern de Múnich</a></li>
-                                <li><a class="dropdown-item" href="#">Bayern Leverkusen </a>                 
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Francia </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lillie</a></li>
-                                <li><a class="dropdown-item" href="#">Mónaco</a></li>
-                                <li><a class="dropdown-item" href="#">Montpellier </a></li>
-                                <li><a class="dropdown-item" href="#">PSG </a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Colombia </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Atlético Nacional</a></li>
-                                <li><a class="dropdown-item" href="#">Millonarios </a></li>
-                                <li><a class="dropdown-item" href="#">América de Cali </a></li>
-                                <li><a class="dropdown-item" href="#">Junior de Barranquilla </a></li>
-                                <li><a class="dropdown-item" href="#">Independiente Santa Fe </a></li>
-                                <li><a class="dropdown-item" href="#">Deportivo Cali </a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Arabia Saudita </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Al-Hilal</a></li>
-                                <li><a class="dropdown-item" href="#">Al-Ittihad </a></li>
-                                <li><a class="dropdown-item" href="#">Al-Nassr </a></li>
-                                <li><a class="dropdown-item" href="#">Al-Ahli Saudi </a></li>                    
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Argentina </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Argentinos Juniors</a></li>
-                                <li><a class="dropdown-item" href="#">Boca Juniors </a></li>
-                                <li><a class="dropdown-item" href="#">Huracán </a></li>
-                                <li><a class="dropdown-item" href="#">Independiente </a></li>
-                                <li><a class="dropdown-item" href="#">Lanús </a></li>
-                                <li><a class="dropdown-item" href="#">Racing Club </a></li>
-                                <li><a class="dropdown-item" href="#">River Plate </a></li>
-                                <li><a class="dropdown-item" href="#">San Lorenzo de Almagro</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Estado Unidos </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Chicago Fire</a></li>
-                                <li><a class="dropdown-item" href="#">Colorado Rapids</a></li>
-                                <li><a class="dropdown-item" href="#">Columbus Crew </a></li>
-                                <li><a class="dropdown-item" href="#">D.C. United </a></li>
-                                <li><a class="dropdown-item" href="#">FC Dallas </a></li>
-                                <li><a class="dropdown-item" href="#">Inter de Miami</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Brasil </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="#">América Mineiro</a></li>
-                                <li><a class="dropdown-item" href="#">Botafogo</a></li>
-                                <li><a class="dropdown-item" href="#">Corinthians </a></li>
-                                <li><a class="dropdown-item" href="#">Cruzeiro </a></li>
-                                <li><a class="dropdown-item" href="#">Flamengo </a></li>
-                                <li><a class="dropdown-item" href="#">Fluminense</a></li>
-                                <li><a class="dropdown-item" href="#">Internacional </a></li>  
-                                <li><a class="dropdown-item" href="#">Palmeiras </a></li>  
-                                <li><a class="dropdown-item" href="#">Santos </a></li>  
-                                <li><a class="dropdown-item" href="#">São Paulo </a></li> 
-                            </ul>
-                        </li>
+                            </li>
+                            <li> <a class="dropdown-item" href="#"> España</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Atlético de Madrid </a></li>
+                                    <li><a class="dropdown-item" href="#">Barcelona</a></li>
+                                    <li><a class="dropdown-item" href="#">Betis</a></li>                        
+                                    <li><a class="dropdown-item" href="#">Real Madrid </a></li>
+                                    <li><a class="dropdown-item" href="#">Sevilla </a></li>
+                                    <li><a class="dropdown-item" href="#">Valencia </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Italia </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Atalanta</a></li>
+                                    <li><a class="dropdown-item" href="#">Inter de Milán </a></li>
+                                    <li><a class="dropdown-item" href="#">Juventus </a></li>
+                                    <li><a class="dropdown-item" href="#">LazioMilán </a></li>
+                                    <li><a class="dropdown-item" href="#">Milán </a></li>
+                                    <li><a class="dropdown-item" href="#">Roma </a></li>
+                                </ul>
+                                
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Alemania </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Borussia dortmund</a></li>
+                                    <li><a class="dropdown-item" href="#">Bayern de Múnich</a></li>
+                                    <li><a class="dropdown-item" href="#">Bayern Leverkusen </a>                 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Francia </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Lillie</a></li>
+                                    <li><a class="dropdown-item" href="#">Mónaco</a></li>
+                                    <li><a class="dropdown-item" href="#">Montpellier </a></li>
+                                    <li><a class="dropdown-item" href="#">PSG </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Colombia </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Atlético Nacional</a></li>
+                                    <li><a class="dropdown-item" href="#">Millonarios </a></li>
+                                    <li><a class="dropdown-item" href="#">América de Cali </a></li>
+                                    <li><a class="dropdown-item" href="#">Junior de Barranquilla </a></li>
+                                    <li><a class="dropdown-item" href="#">Independiente Santa Fe </a></li>
+                                    <li><a class="dropdown-item" href="#">Deportivo Cali </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Arabia Saudita </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Al-Hilal</a></li>
+                                    <li><a class="dropdown-item" href="#">Al-Ittihad </a></li>
+                                    <li><a class="dropdown-item" href="#">Al-Nassr </a></li>
+                                    <li><a class="dropdown-item" href="#">Al-Ahli Saudi </a></li>                    
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Argentina </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Argentinos Juniors</a></li>
+                                    <li><a class="dropdown-item" href="#">Boca Juniors </a></li>
+                                    <li><a class="dropdown-item" href="#">Huracán </a></li>
+                                    <li><a class="dropdown-item" href="#">Independiente </a></li>
+                                    <li><a class="dropdown-item" href="#">Lanús </a></li>
+                                    <li><a class="dropdown-item" href="#">Racing Club </a></li>
+                                    <li><a class="dropdown-item" href="#">River Plate </a></li>
+                                    <li><a class="dropdown-item" href="#">San Lorenzo de Almagro</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Estado Unidos </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Chicago Fire</a></li>
+                                    <li><a class="dropdown-item" href="#">Colorado Rapids</a></li>
+                                    <li><a class="dropdown-item" href="#">Columbus Crew </a></li>
+                                    <li><a class="dropdown-item" href="#">D.C. United </a></li>
+                                    <li><a class="dropdown-item" href="#">FC Dallas </a></li>
+                                    <li><a class="dropdown-item" href="#">Inter de Miami</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Brasil </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">América Mineiro</a></li>
+                                    <li><a class="dropdown-item" href="#">Botafogo</a></li>
+                                    <li><a class="dropdown-item" href="#">Corinthians </a></li>
+                                    <li><a class="dropdown-item" href="#">Cruzeiro </a></li>
+                                    <li><a class="dropdown-item" href="#">Flamengo </a></li>
+                                    <li><a class="dropdown-item" href="#">Fluminense</a></li>
+                                    <li><a class="dropdown-item" href="#">Internacional </a></li>  
+                                    <li><a class="dropdown-item" href="#">Palmeiras </a></li>  
+                                    <li><a class="dropdown-item" href="#">Santos </a></li>  
+                                    <li><a class="dropdown-item" href="#">São Paulo </a></li> 
+                                </ul>
+                            </li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown" id="myDropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Selecciones por federación </a>
                         <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item" href="#"> UEFA </a></li>
-                        <li> <a class="dropdown-item" href="#"> CONMEBOL</a>
-                            <ul class="submenu dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Argentina</a></li>
-                            <li><a class="dropdown-item" href="#">Brasil</a></li>
-                            <li><a class="dropdown-item" href="#">Colombia </a>                 
+                            <li> <a class="dropdown-item" href="#"> UEFA </a></li>
+                            <li> <a class="dropdown-item" href="#"> CONMEBOL</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Argentina</a></li>
+                                    <li><a class="dropdown-item" href="#">Brasil</a></li>
+                                    <li><a class="dropdown-item" href="#">Colombia </a></li>
+                                </ul>
                             </li>
-                        </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> CONCACAF </a></li>
-                        <li><a class="dropdown-item" href="#"> CAF </a></li>
-                        <li><a class="dropdown-item" href="#"> AFC </a></li>
+                            <li><a class="dropdown-item" href="#"> CONCACAF </a></li>
+                            <li><a class="dropdown-item" href="#"> CAF </a></li>
+                            <li><a class="dropdown-item" href="#"> AFC </a></li>
                         </ul>
                     </li>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit">Search</button>                
                     </form>
-                    <img src="https://w7.pngwing.com/pngs/387/168/png-transparent-shopping-cart-button-graphy-earring-shopping-cart-angle-rectangle-logo.png" alt="carrito" width="80px" height="80px" class="img-fluid">
-                    <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
                     
-                  
-
                 </ul>
-        </div>
-        <!-- navbar-collapse.// -->
-        </div>
-    <!-- container-fluid.// -->
-
-  </nav>
-        </div>
-        
-      </nav>
+            </div> 
+            <!--href cambiar para ir a las compras-->
+            <a href="login.html" class="btn" type="button"> <img src="./imgs/carrito.png" alt="carrito" width="30px" height="30px" class="img-fluid"></a> 
+            <a href="login.html" class="btn btn-primary">Iniciar Sesión</a> 
+        </div>         
+    </nav>
 </header>      
     <!--carrusel-->
-     
+    
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+       
+        <div class="carousel-inner" id="carrusel">
+            <div class="colecciones">
+                <h2 id="colecciones">NUESTRAS COLECCIONES</h2>
+                <h6>ENVIOS A TODO COLOMBIA! VENTAS X MAYOR Y DETAL </h6>
+            </div>
             <div class="carousel-item active" data-bs-interval="2000">
             <img src="https://todosobrecamisetas.com/wp-content/uploads/newcastle-united-2022-23-castore-home-kit-h.jpg" class="d-block w-80" alt="..." >
             </div>
@@ -233,7 +232,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-
+    </div>
     <!--Fin carrusel-->
     <section class="container mt-5">
         <h1>Quiénes Somos</h1>
@@ -245,12 +244,116 @@
 
         <p>Gracias por elegirnos como tu tienda de camisetas de fútbol. ¡Esperamos que disfrutes de tu experiencia de compra y encuentres la camiseta perfecta para mostrar tu pasión por el fútbol!</p>
     </section>
+    <!-- <section id="shopify-section-sections--16745166274807__icons-with-text" class="shopify-section shopify-section-group-footer-group cc-icons-with-text"><link rel="stylesheet" href="//starkbrand.com.co/cdn/shop/t/16/assets/icons-with-text.css?v=55046064819161303781682463675"> -->
+    <!-- <section class="container">
+        <div class="icons-with-text section section--full-width border-top section--padded-small color-scheme color-scheme--1" id="sections--16745166274807__icons-with-text"></div>
+            <div class="container relative">
+                <carousel-slider class="carousel block relative">
+                    <div class="slider-nav slide-nav--inline flex justify-between absolute top-0 h-full no-js-hidden">
+                        <button type="button" class="slider-nav__btn tap-target tap-target--left btn text-current has-ltr-icon" name="prev" aria-controls="slider-sections--16745166274807__icons-with-text">
+                        <span class="visually-hidden">Anterior</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" role="presentation" class="icon">
+                            <path d="m6.797 11.625 8.03-8.03 1.06 1.06-6.97 6.97 6.97 6.97-1.06 1.06z"></path>
+                        </svg>
+                        </button>
+                        <button type="button" class="slider-nav__btn tap-target tap-target--right btn text-current has-ltr-icon" name="next" aria-controls="slider-sections--16745166274807__icons-with-text">
+                        <span class="visually-hidden">Siguiente</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
+                            <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+                        </svg>
+                        </button>
+                    </div> -->
 
+                        <!-- <div class="slider slider--contained relative slider--no-scrollbar is-grabbable" id="slider-sections--16745166274807__icons-with-text">
+                            <ul class="slider__grid grid grid-flow-col gap-x-theme auto-cols-1 sm:auto-cols-2 md:auto-cols-3 lg:auto-cols-4">
+                                <li class="slider__item cc-animate-init cc-animate-in" >
+                                    <a class="text-current flex h-full justify-center items-center" href="http://api.whatsapp.com/send?phone=573136595069">                             -->
+                                        <!-- <img src="./imgs/wsp.png" alt="" width="10" height="10"> -->
+                                        <!-- <img src="//starkbrand.com.co/cdn/shop/files/whatsapp-logo-112413FAA7-seeklogo.com.png?v=1683721397&amp;width=36" alt="" srcset="//starkbrand.com.co/cdn/shop/files/whatsapp-logo-112413FAA7-seeklogo.com.png?v=1683721397&amp;width=36 36w" width="36" height="36" loading="lazy">
+                                        <div class="icons-with-text__text rte">
+                                            <p class="m-0">
+                                                <strong>¿Necesitas ayuda?</strong>
+                                            </p>
+                                            <p>contacta a un asesor</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="slider__item flex justify-center items-center cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.14s" style="animation-delay: 0.14s;">
+                    
+                                    <svg class="icon icon--award" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+                                        <circle stroke="currentColor" fill="none" cx="8.1081667" cy="5.6658235" r="4.3742652"></circle>
+                                            <polyline stroke="currentColor" fill="none" points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" transform="matrix(0.624895,0,0,0.624895,0.60942571,0.66666362)"></polyline>
+                                    </svg>                               
+                                    <div class="icons-with-text__text rte">
+                                        <p class="m-0">
+                                            <strong>Compra ahora</strong>
+                                        </p>
+                                        <p>Paga despues con ADDI</p>
+                                    </div>
+                                </li>    
+                            </ul>   
+                        </div>
+                 -->
+                 <!-- <div class="contenedor">
+                    <ul id="lista1"> -->
+                  <!-- <li class="slider__item cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.07s" style="animation-delay: 0.07s;"> -->
+                    <!-- <li> 
+                    <a class="text-current flex h-full justify-center items-center" href="http://api.whatsapp.com/send?phone=573122491659">
+                              <img src="./imgs/wsp.png" alt="" srcset="//starkbrand.com.co/cdn/shop/files/whatsapp-logo-112413FAA7-seeklogo.com.png?v=1683721397&amp;width=36 36w" width="36" height="36" loading="lazy">
+                                <div class="icons-with-text__text rte">
+                          <p class="m-0"><strong>¿Necesitas ayuda?</strong></p>
+                          <p>contacta a un asesor</p>
+                        </div>               
+                               </a>          
+                          </li>
+                          <li> -->
+                  <!-- <li class="slider__item flex justify-center items-center cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.14s" style="animation-delay: 0.14s;">              -->
+                      <!-- <svg class="icon icon--award" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+                          <circle stroke="currentColor" fill="none" cx="8.1081667" cy="5.6658235" r="4.3742652"></circle>
+                              <polyline stroke="currentColor" fill="none" points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" transform="matrix(0.624895,0,0,0.624895,0.60942571,0.66666362)"></polyline>
+                      </svg>
+                            <div class="icons-with-text__text rte">
+                      <p class="m-0"><strong>Compra ahora</strong></p>
+                      <p>Paga despues con ADDI</p>
+                    </div>
+                          
+                        </li>
+                    <li class="slider__item flex justify-center items-center cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.21s" style="animation-delay: 0.21s;">
+                          <svg class="icon icon--box" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M14.41 3.37L8.27 1.41a1 1 0 00-.61 0L1.52 3.37a1 1 0 00-.7.95v7.86c0 .41.25.78.63.93l6.14 2.46c.24.1.5.1.75 0l6.14-2.46a1 1 0 00.62-.93V4.32a1 1 0 00-.69-.95zM7.96 2.36l6.05 1.93-2.7.9L5.35 3.2l2.63-.84zm-.46 12.1l-5.68-2.28V5.3L7.5 7.2v7.26zM8 6.3L1.96 4.28l2.58-.82 5.99 2L8 6.3zm6.1 5.89l-5.6 2.24V7.19l5.6-1.87v6.87z"></path></svg>
+                            <div class="icons-with-text__text rte">
+                      <p class="m-0"><strong>Pagos contraentrega</strong></p>
+                      <p>Paga en efectivo</p>
+                    </div>                             
+                        </li>
+                    <li class="slider__item flex justify-center items-center cc-animate-init" data-cc-animate="" data-cc-animate-delay="0.28s" style="animation-delay: 0.28s;">
+                          <svg class="icon icon--return" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M9 .5a.5.5 0 000 1h1a4.5 4.5 0 110 9H2.2l3.15-3.15a.5.5 0 10-.7-.7l-4 4a.5.5 0 000 .7l4 4a.5.5 0 00.7-.7L2.21 11.5H10a5.5 5.5 0 100-11H9z"></path></svg>
+                            <div class="icons-with-text__text rte">
+                      <p class="m-0"><strong>Envíos gratis</strong></p>
+                      <p>Sin mínimo de compra</p>
+                    </div>                
+                        </li>
+                  <li class="slider__item flex justify-center items-center cc-animate-init" data-cc-animate="" data-cc-animate-delay="0.35s" style="animation-delay: 0.35s;">
+                           <svg class="icon icon--dollar_sign" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><line stroke="currentColor" fill="none" x1="8.0021544" y1="1.1659812" x2="8.0021544" y2="15.017867"></line>
+                          <path stroke="currentColor" fill="none" d="M 11.15031,3.6845048 H 6.4280755 a 2.2037096,2.2037096 0 0 0 0,4.4074192 h 3.1481559 a 2.2037095,2.2037095 0 0 1 0,4.407417 H 4.224366"></path>
+                   </svg>
+          
+                            <div class="icons-with-text__text rte">
+                      <p class="m-0"><strong>Ahorra en combo</strong></p>
+                      <p>arma tu pack </p>
+                    </div>
+                        </li>
+              </ul>
+                  </div>
+                </carousel-slider>
+            </div>
+        </div>
+    </section> -->
+    
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2023 Tienda de Camisetas de Fútbol SOCCER ARMOR </p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         // make it as accordion for smaller screens
@@ -286,6 +389,91 @@
         // end if innerWidth
       });
     </script>
+
+
+<!-- <section id="secciones" class="secciones icons-with-text">
+    <link rel="stylesheet" href="//starkbrand.com.co/cdn/shop/t/16/assets/icons-with-text.css?v=55046064819161303781682463675">
+    <div class="icons-with-text section section--full-width border-top section--padded-small color-scheme color-scheme--1" id="sections--16745166274807__icons-with-text">
+    <div class="container relative">
+        <carousel-slider class="carousel block relative">
+        <div class="slider-nav slide-nav--inline flex justify-between absolute top-0 h-full no-js-hidden">
+          <button type="button" class="slider-nav__btn tap-target tap-target--left btn text-current has-ltr-icon" name="prev" aria-controls="slider-sections--16745166274807__icons-with-text">
+            <span class="visually-hidden">Anterior</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" role="presentation" class="icon">
+                <path d="m6.797 11.625 8.03-8.03 1.06 1.06-6.97 6.97 6.97 6.97-1.06 1.06z">
+            </path></svg>
+          </button>
+          <button type="button" class="slider-nav__btn tap-target tap-target--right btn text-current has-ltr-icon" name="next" aria-controls="slider-sections--16745166274807__icons-with-text">
+            <span class="visually-hidden">Siguiente</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation" class="icon">
+                <path d="m9.693 4.5 7.5 7.5-7.5 7.5" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="slider slider--contained relative slider--no-scrollbar is-grabbable" id="slider-sections--16745166274807__icons-with-text">
+          <ul class="slider__grid grid grid-flow-col gap-x-theme auto-cols-1 sm:auto-cols-2 md:auto-cols-3 lg:auto-cols-4"><li class="slider__item cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.07s" style="animation-delay: 0.07s;">
+                
+                <a class="text-current flex h-full justify-center items-center" href="http://api.whatsapp.com/send?phone=573122491659">
+                
+<img src="//starkbrand.com.co/cdn/shop/files/whatsapp-logo-112413FAA7-seeklogo.com.png?v=1683721397&amp;width=36" alt="" srcset="//starkbrand.com.co/cdn/shop/files/whatsapp-logo-112413FAA7-seeklogo.com.png?v=1683721397&amp;width=36 36w" width="36" height="36" loading="lazy">
+
+                  <div class="icons-with-text__text rte"><p class="m-0"><strong>¿Necesitas ayuda?</strong></p><p>contacta a un asesor</p>
+</div>
+                
+
+                
+                </a>
+                
+              </li><li class="slider__item flex justify-center items-center cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.14s" style="animation-delay: 0.14s;">
+                
+<svg class="icon icon--award" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><circle stroke="currentColor" fill="none" cx="8.1081667" cy="5.6658235" r="4.3742652"></circle>
+        <polyline stroke="currentColor" fill="none" points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" transform="matrix(0.624895,0,0,0.624895,0.60942571,0.66666362)"></polyline></svg>
+
+                  <div class="icons-with-text__text rte"><p class="m-0"><strong>Compra ahora</strong></p><p>Paga despues con ADDI</p>
+</div>
+                
+
+                
+              </li><li class="slider__item flex justify-center items-center cc-animate-init cc-animate-in" data-cc-animate="" data-cc-animate-delay="0.21s" style="animation-delay: 0.21s;">
+                
+<svg class="icon icon--box" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M14.41 3.37L8.27 1.41a1 1 0 00-.61 0L1.52 3.37a1 1 0 00-.7.95v7.86c0 .41.25.78.63.93l6.14 2.46c.24.1.5.1.75 0l6.14-2.46a1 1 0 00.62-.93V4.32a1 1 0 00-.69-.95zM7.96 2.36l6.05 1.93-2.7.9L5.35 3.2l2.63-.84zm-.46 12.1l-5.68-2.28V5.3L7.5 7.2v7.26zM8 6.3L1.96 4.28l2.58-.82 5.99 2L8 6.3zm6.1 5.89l-5.6 2.24V7.19l5.6-1.87v6.87z"></path></svg>
+
+                  <div class="icons-with-text__text rte"><p class="m-0"><strong>Pagos contraentrega</strong></p><p>Paga en efectivo</p>
+</div>
+                
+
+                
+              </li><li class="slider__item flex justify-center items-center cc-animate-init" data-cc-animate="" data-cc-animate-delay="0.28s" style="animation-delay: 0.28s;">
+                
+<svg class="icon icon--return" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M9 .5a.5.5 0 000 1h1a4.5 4.5 0 110 9H2.2l3.15-3.15a.5.5 0 10-.7-.7l-4 4a.5.5 0 000 .7l4 4a.5.5 0 00.7-.7L2.21 11.5H10a5.5 5.5 0 100-11H9z"></path></svg>
+
+                  <div class="icons-with-text__text rte"><p class="m-0"><strong>Envíos gratis</strong></p><p>Sin mínimo de compra</p>
+</div>
+                
+
+                
+              </li><li class="slider__item flex justify-center items-center cc-animate-init" data-cc-animate="" data-cc-animate-delay="0.35s" style="animation-delay: 0.35s;">
+                
+<svg class="icon icon--dollar_sign" width="36" height="36" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><line stroke="currentColor" fill="none" x1="8.0021544" y1="1.1659812" x2="8.0021544" y2="15.017867"></line>
+        <path stroke="currentColor" fill="none" d="M 11.15031,3.6845048 H 6.4280755 a 2.2037096,2.2037096 0 0 0 0,4.4074192 h 3.1481559 a 2.2037095,2.2037095 0 0 1 0,4.407417 H 4.224366"></path></svg>
+
+                  <div class="icons-with-text__text rte"><p class="m-0"><strong>Ahorra en combo</strong></p><p>arma tu pack </p>
+</div>
+                
+
+                
+              </li></ul>
+        </div>
+      </carousel-slider>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
 
 
 </body>
