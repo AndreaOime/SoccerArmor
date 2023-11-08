@@ -1,0 +1,126 @@
+/* Estilos personalizados */
+/* Puedes agregar estilos adicionales aquí */
+
+body {
+    padding-top: 20px;
+    background-color:antiquewhite;
+    font-family: Arial, sans-serif;
+}
+#navbar1{
+    background-color: #ed3e3e;
+}  
+
+.navbar-expand-lg{
+    margin:0 ;
+    padding: 0;
+    box-sizing: content-box;
+}
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF5722;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #FF5722;
+    border: none;
+    width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+#myDropdown{
+    text-align: center;
+}
+.btn-outline-success:hover{
+    background-color: dimgrey;
+}
+.btn-outline-success{
+    background-color: black;
+    color: white;
+    border-color: #f1f1f1;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+}
+.remove-from-cart:hover {
+    background-color: #45a049;
+}
