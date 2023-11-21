@@ -7,7 +7,8 @@ import { UserContext } from '../../context/UserContext';
 export default function UserForm({ userSelected, handlerCloseForm }) {
   const { handlerAddUser, initialUserForm } = useContext(UserContext);
   const [userForm, setUserForm] = useState(initialUserForm);
-  const { id, username, password, email } = userForm;
+  const { id, name, username, password, email, admin } = userForm;
+  const [checked, setChecked] = useState(userForm.admin);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,10 +24,17 @@ export default function UserForm({ userSelected, handlerCloseForm }) {
       [name]: value,
     });
   }
+  const onCheckboxChange = () => {
+    setChecked(!checked);
+    setUserForm({
+      ...userForm,
+      admin: checked
+    })
+  }
 
   const onSubmit = (event) => {
     event.preventDefault();
-    if (!username || (!password && id !== 0) || !email) {
+    if (!name || !username || (!password && id !== 0) || !email) {
       Swal.fire({
         title: "Error de validación",
         text: "Debe completar los campos del formulario",
@@ -43,7 +51,6 @@ export default function UserForm({ userSelected, handlerCloseForm }) {
       return;
     }
 
-
     // guardar el user form en el listado de usuarios
     handlerAddUser(userForm);
     setUserForm(initialUserForm);
@@ -57,6 +64,9 @@ export default function UserForm({ userSelected, handlerCloseForm }) {
   return (
     <Form onSubmit={onSubmit}>
       <Form.Group className="my-3">
+        <Form.Control placeholder="Nombre completo" name="name" value={name} onChange={onInputChange} />
+      </Form.Group>
+      <Form.Group className="my-3">
         <Form.Control placeholder="Nombre de usuario" name="username" value={username} onChange={onInputChange} />
       </Form.Group>
       {id !== 0 ||
@@ -66,6 +76,9 @@ export default function UserForm({ userSelected, handlerCloseForm }) {
       }
       <Form.Group className="my-3">
         <Form.Control placeholder="Correo electrónico" name="email" value={email} onChange={onInputChange} />
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Check type="checkbox" label="¿Hacer administrador?" checked={admin} onChange={onCheckboxChange} />
       </Form.Group>
       <Form.Group>
         <Form.Control type="hidden" name="id" value={id} />

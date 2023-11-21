@@ -3,6 +3,7 @@ import UsersList from '../components/UsersList/UsersList'
 import { Button } from 'react-bootstrap';
 import UserModalForm from '../components/UserModalForm/UserModalForm';
 import { UserContext } from '../context/UserContext';
+import { AuthContext } from '../auth/context/AuthContext';
 
 export default function UsersPage() {
   const {
@@ -11,6 +12,8 @@ export default function UsersPage() {
     handlerOpenForm,
     getUsers
   } = useContext(UserContext);
+
+  const { login } = useContext(AuthContext);
 
   useEffect(() => {
     getUsers();
@@ -26,8 +29,12 @@ export default function UsersPage() {
         <div className="row">
           <div className="col">
             {
-              visibleForm ||
-              <Button className="my-2" variant="primary" type="button" onClick={handlerOpenForm}>
+              (visibleForm || !login.isAdmin) ||
+              <Button className="my-2"
+                variant="primary"
+                type="button"
+                onClick={handlerOpenForm}
+              >
                 Nuevo Usuario
               </Button>
             }

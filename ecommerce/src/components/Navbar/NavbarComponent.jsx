@@ -17,9 +17,11 @@ export default function NavbarComponent() {
             <NavLink className="nav-link" to="/">
               Inicio
             </NavLink>
-            <NavLink className="nav-link" to="/users">
-              Usuarios
-            </NavLink>
+            {!login.isAdmin ||
+              <NavLink className="nav-link" to="/users">
+                Usuarios
+              </NavLink>
+            }
           </Nav>
           <Nav className="justify-content-end gap-3">
             <NavLink className="nav-link" to="/perfil">

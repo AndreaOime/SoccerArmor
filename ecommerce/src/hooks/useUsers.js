@@ -8,9 +8,11 @@ const initialUsers = [];
 
 const initialUserForm = {
   id: 0,
+  name: '',
   username: '',
   password: '',
-  email: ''
+  email: '',
+  admin: false
 }
 
 const initialErrors = {
@@ -25,12 +27,11 @@ export const useUsers = () => {
   const [userSelected, setUserSelected] = useState(initialUserForm);
   const [visibleForm, setVisibleForm] = useState(false);
 
-  const [errors, setErrors] = useState(initialErrors);
+  const [errors] = useState(initialErrors);
   const navigate = useNavigate();
 
   const getUsers = async () => {
     const result = await findAll();
-    console.log();
     dispatch({
       type: 'loadingUsers',
       payload: result.data
@@ -40,7 +41,6 @@ export const useUsers = () => {
   const handlerAddUser = async (user) => {
     let response;
     try {
-
       if (user.id === 0) {
         response = await save(user);
       } else {
@@ -59,6 +59,10 @@ export const useUsers = () => {
       });
 
       handlerCloseForm();
+      dispatch({
+        type: 'loadingUsers',
+        payload: []
+      })
       navigate('/users')
     } catch (error) {
       console.error(error);
